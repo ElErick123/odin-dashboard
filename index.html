@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b91d735790.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,7 +17,7 @@
         </div>
 
         <nav>
-            <div class="navegation">
+            <section class="navegation">
                 <div class="nav-cell">
                     <i class="fa-solid fa-house"></i>
                     <span>Home</span>
@@ -41,9 +42,9 @@
                     <i class="fa-solid fa-users"></i>
                     <span>Communities</span>
                 </div>
-            </div>
+            </section>
 
-            <div class="user-settings">
+            <section class="user-settings">
                 <div class="nav-cell"> 
                     <i class="fa-solid fa-gear"></i>
                     <span>Settings</span>
@@ -56,13 +57,13 @@
                     <i class="fa-solid fa-shield-halved"></i>
                     <span>Privacy</span>
                 </div>
-            </div>
+            </section>
         </nav>
      </aside>
 
     <!-- SECTION 2: HEADER -->
     <header>
-        <div class="top-section">
+        <section class="top-section">
             <div class="search-bar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search" placeholder="Search">
@@ -70,15 +71,15 @@
     
             <div class="utilities">
                 <i class="fa-regular fa-bell"></i>
-                <img src="" alt="Profile picture">
+                <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360" alt="Profile picture" width="50">
                 <span>Erick Rafael</span>
             </div>
-        </div>
+        </section>
     
-        <div class="bottom-section">
+        <section class="bottom-section">
             <div class="profile-card">
                 <div class="left">
-                    <img src="" alt="Profile picture">
+                    <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360" alt="Profile picture" width="100">
                 </div>
                 <div class="right">
                     <span>Hi there,</span>
@@ -91,7 +92,140 @@
                 <button>Upload</button>
                 <button>Share</button>
             </div>
-        </div>
+        </section>
     </header>
+
+    <!-- SECTION 3: MAIN -->
+     <main>
+        <section class="projects-section">
+            <h2>Your projects</h2>
+            <div class="projects">
+                <div class="project-cell">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsum dicta fugiat laborum maiores quae.</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
+                </div>
+
+                <div class="project-cell">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe expedita molestiae vitae quo laboriosam doloribus, unde cum ratione a corrupti dicta libero minima. Nesciunt, tempore.</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
+                </div>
+
+                <div class="project-cell">
+                    <h3>Impossible App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quibusdam.</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
+                </div>
+
+                <div class="project-cell">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum harum, aliquid aliquam vero a eum fuga beatae molestiae architecto accusantium?</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
+                </div>
+
+                <div class="project-cell">
+                    <h3>Add Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsum dicta fugiat laborum maiores quae.</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
+                </div>
+
+                <div class="project-cell">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum quos fugiat eveniet nihil exercitationem reiciendis repellat repellendus nostrum nulla?</p>
+                    <div class="icons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-fork"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="announcements-section">
+            <h2>Announcements</h2>
+            <div class="announcements">
+                <div class="announcement-cell">
+                    <h3>Site Maintenance</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem exercitationem facilis vero! Odit, explicabo laboriosam!</p>
+                </div>
+
+                <div class="announcement-cell">
+                    <h3>Community Share Day</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iste maiores? Eveniet tenetur minus dolore.</p>
+                </div>
+
+                <div class="announcement-cell">
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quaerat exercitationem quae voluptatibus non odit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-section">
+            <h2>Trending</h2>
+            <div class="trending">
+                <div class="trending-cell">
+                    <div class="left">
+                        <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360" alt="Profile Picture" width="50">
+                    </div>
+                    <div class="right">
+                        <span>@tegan</span>
+                        <span>World Peace Builder</span>
+                    </div>
+                </div>
+
+                <div class="trending-cell">
+                    <div class="left">
+                        <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360" alt="Profile Picture" width="50">
+                    </div>
+                    <div class="right">
+                        <span>@morgan</span>
+                        <span>Super Cool Project</span>
+                    </div>
+                </div>
+
+                <div class="trending-cell">
+                    <div class="left">
+                        <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360" alt="Profile Picture" width="50">
+                    </div>
+                    <div class="right">
+                        <span>@kendall</span>
+                        <span>Life Changing App</span>
+                    </div>
+                </div>
+                
+                <div class="trending-cell">
+                    <div class="left">
+                        <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360" alt="Profile Picture" width="50">
+                    </div>
+                    <div class="right">
+                        <span>@alex</span>
+                        <span>No Traffic Maker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
 </body>
 </html>
