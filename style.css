@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 120vh;
+    height: 150vh;
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-template-rows: 300px 1fr;
@@ -23,6 +23,54 @@ a {
 /* SECTION 1: SIDEBAR */
 .sidebar {
     grid-area: sidebar;
+    background-color: rgb(27, 148, 204);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 50px;
+    color: white;
+}
+
+.sidebar .nav-cell,
+.sidebar .icon {
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .icon span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sidebar .icon i {
+    margin-right: 25px;
+    font-size: 2.5rem;
+}
+
+.sidebar .nav-cell span {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.sidebar .nav-cell i {
+    margin-right: 35px;
+    font-size: 1.4rem;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-left: 15px;
+}
+
+.sidebar nav > * {
+    display: flex;
+    flex-direction: column;
 }
 
 /* SECTION 2: HEADER */
