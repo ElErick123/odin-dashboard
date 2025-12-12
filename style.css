@@ -9,7 +9,7 @@ body {
     height: 150vh;
     display: grid;
     grid-template-columns: 400px 1fr;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 250px 1fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main";
@@ -76,6 +76,113 @@ a {
 /* SECTION 2: HEADER */
 .header {
     grid-area: header;
+    box-shadow: 0px 5px 10px rgb(220, 220, 220);
+}
+
+/* SECTION 2.1 TOP SECTION */
+.header .top-section {
+    display: flex;
+    padding: 20px 60px;
+}
+
+.header .top-section .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.header .top-section .search-bar i {
+    font-size: 1.4rem;
+    margin-right: 25px;
+}
+
+.header .top-section .search-bar input {
+    width: 835px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.header .top-section .search-bar input:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.650);
+}
+
+.header .top-section .utilities {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.header .top-section .utilities i {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.header .top-section .utilities img {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.header .top-section .utilities span {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* SECTION 2.2: BOTTOM SECTION */
+.header .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.bottom-section .profile-card {
+    display: flex;
+}
+
+.bottom-section .profile-card .left {
+    margin-right: 20px;
+}
+
+.bottom-section .profile-card .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom-section .profile-card .right span:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.bottom-section .profile-card .right span:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.bottom-section .buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 25px;
+}
+
+.bottom-section .buttons button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(27, 148, 204);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bottom-section .buttons button:hover {
+    filter: brightness(1.1);
 }
 
 
