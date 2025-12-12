@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 300px 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+}
+
+a {
+    color: white;
+     text-decoration: none;
+}
+
+/* SECTION 1: SIDEBAR */
+.sidebar {
+    grid-area: sidebar;
+}
+
+/* SECTION 2: HEADER */
+.header {
+    grid-area: header;
+}
+
+
+/* SECTION 3: MAIN */
+.main {
+    grid-area: main;
+}
