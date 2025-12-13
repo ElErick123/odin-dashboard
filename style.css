@@ -275,6 +275,26 @@ a {
     grid-area: announcements;
 }
 
+.main .announcements-section .announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px 30px 40px 40px;
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+}
+
+.main .announcements-section .announcements .announcement-cell:not(:last-of-type) {
+    border-bottom: 1px solid rgb(190, 190, 190);
+    padding-bottom: 20px;
+}
+
+.main .announcements-section .announcements .announcement-cell p {
+    margin-top: 2px;
+    color: rgb(100, 100, 100)
+}
+
 /* SECTION 3.3: TRENDING */
 .main .trending-section {
     grid-area: trending;
