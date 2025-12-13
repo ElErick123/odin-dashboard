@@ -313,3 +313,33 @@ a {
 .main .trending-section {
     grid-area: trending;
 }
+
+.main .trending-section .trending {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+}
+
+.main .trending-section .trending .trending-cell {
+    display: flex;
+    gap: 20px;
+}
+
+.main .trending-section .trending .trending-cell .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.main .trending-section .trending .trending-cell .right span {
+    font-size: 1.2rem;
+}
+
+.main .trending-section .trending .trending-cell .right span:not(:first-of-type) {
+    color: rgb(100, 100, 100);
+}
