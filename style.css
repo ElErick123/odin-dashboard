@@ -94,6 +94,7 @@ a {
 /* SECTION 2.1 TOP SECTION */
 .header .top-section {
     display: flex;
+    justify-content: space-between;
     padding: 20px 60px;
 }
 
