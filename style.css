@@ -102,6 +102,7 @@ a {
     display: flex;
     align-items: center;
     margin-right: 150px;
+    width: 100%;
 }
 
 .header .top-section .search-bar i {
@@ -116,6 +117,7 @@ a {
     font-size: 1.5rem;
     padding: 5px 20px;
     border-radius: 50px;
+    width: 100%;
 }
 
 .header .top-section .search-bar input:focus {
