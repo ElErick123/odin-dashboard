@@ -41,7 +41,7 @@ a {
     display: flex;
     align-items: center;
     border-radius: 20px;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .sidebar .nav-cell:hover {
@@ -84,7 +84,8 @@ a {
 /* SECTION 2: HEADER */
 .header {
     grid-area: header;
-    box-shadow: 0 10px 10px -4px rgb(220, 220, 220);
+    box-shadow: 0 10px 10px -4px rgb(180, 180, 180);
+    z-index: 999;
 }
 
 /* SECTION 2.1 TOP SECTION */
@@ -206,4 +207,75 @@ a {
 /* SECTION 3: MAIN */
 .main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 50px 40px 50px 25px;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+        gap: 40px;
+    background-color: rgb(235, 235, 235);
+}
+
+.main h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* SECTION 3.1: PROJECTS */
+.main .projects-section {
+    grid-area: projects;
+}
+
+.main .projects-section .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.main .projects-section .projects .project-cell {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 10px solid rgb(255, 190, 0);
+    border-radius: 10px;
+    padding: 50px 30px 40px 30px;
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+}
+
+.main .projects-section .projects .project-cell h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.main .projects-section .projects .project-cell p {
+    color: rgb(100, 100, 100);
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+.main .projects-section .projects .project-cell .icons {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.main .projects-section .projects .project-cell .icons i {
+    font-size: 1.6rem;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+/* SECTION 3.2: ANNOUNCEMENTS */
+.main .announcements-section {
+    grid-area: announcements;
+}
+
+/* SECTION 3.3: TRENDING */
+.main .trending-section {
+    grid-area: trending;
 }
