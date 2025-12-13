@@ -141,7 +141,6 @@ a {
 }
 
 .header .top-section .utilities img {
-    width: 65px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -161,6 +160,10 @@ a {
 
 .bottom-section .profile-card {
     display: flex;
+}
+
+.bottom-section .profile-card img {
+    border-radius: 50%;
 }
 
 .bottom-section .profile-card .left {
@@ -211,7 +214,7 @@ a {
 .main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr 360px;
     padding: 50px 40px 50px 25px;
     grid-template-areas:
         "projects announcements"
@@ -234,16 +237,17 @@ a {
 .main .projects-section .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 35px;
 }
 
 .main .projects-section .projects .project-cell {
     display: flex;
     flex-direction: column;
+    min-height: 290px;
     background-color: white;
     border-left: 10px solid rgb(255, 190, 0);
     border-radius: 10px;
-    padding: 50px 30px 40px 30px;
+    padding: 50px 30px 30px 30px;
     box-shadow: 5px 5px 10px rgb(200, 200, 200);
 }
 
@@ -256,7 +260,6 @@ a {
 .main .projects-section .projects .project-cell p {
     color: rgb(100, 100, 100);
     font-size: 1.3rem;
-    width: 80%;
 }
 
 .main .projects-section .projects .project-cell .icons {
@@ -327,6 +330,10 @@ a {
 .main .trending-section .trending .trending-cell {
     display: flex;
     gap: 20px;
+}
+
+.main .trending-section .trending .trending-cell img {
+    border-radius: 50%;
 }
 
 .main .trending-section .trending .trending-cell .right {
